@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FlexStart Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Jun 19 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    .contclass{width: 100%;display: flex;padding-left: 10px;justify-content: space-evenly;}
+    .containerCard{width: 400px;height: 280px;padding-left: 40px;}
+    .containerCard:hover>.card12{cursor: pointer;;transform: rotateY(180deg);}
+    .card12{width: 100%;height:100%;position: relative;transition: transform 1500ms;transform-style: preserve-3d;}
+    .front1,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front1{background-image: url(http://starkit.co.in/assets/images/firewall.jpg );background-size:cover;}
+    .back1{background-color: black;transform: rotateY(180deg);display: flex;flex-direction: column;justify-content: center;align-items: center;color: white;}
+    .front2{background-image: url(https://c1.wallpaperflare.com/preview/724/645/91/timber-sheet-products-industry-wood.jpg);background-size:400px 500px;}
+    .front3{background-image: url(https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmV0d29ya3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);background-size:cover;}
+    .front4{background-image: url(http://starkit.co.in/assets/images/server.jpg);background-size:cover;}
+    .front5{background-image: url(http://starkit.co.in/assets/images/vc2.jpg );background-size:cover;}
+    .front6{background-image: url(https://media.istockphoto.com/id/1314761274/photo/server-room-data-center-3d-rendering.jpg?s=612x612&w=0&k=20&c=E8BNNB3xhvCPE50NtBT8csOv2XDPWZkYUw8uLGbWWBc= );background-size:cover;}
+    .front7{background-image: url(http://starkit.co.in/assets/images/license.jpg );background-size:400px 500px;}
+    .front8{background-image: url(https://cdn.wallpapersafari.com/0/83/VrTv23.jpg);background-size:400px 500px;}
+    .front2,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front3,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front4,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front5,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front6,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front7,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front8,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+
+
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/starkitremovebg.png" alt="" height="">
+        <!-- <span>FlexStart</span> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          
+          <li><a class="nav-link scrollto" href="index.html#about">About us</a></li>
+         
+          <li class="dropdown"><a href="#"><span>Expertise</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="cybersecurity.html">Cyber Security</a></li>
+             
+              <li><a href="itconsulting.html">IT Consulting </a></li>
+              <li><a href="cloudintegration.html">Cloud Integration</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Managed Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Managed it services.html">Managed IT Services</a></li>
+              
+              <li><a href="Network security.html">Network Security </a></li>
+              <li><a href="Data backup recovery.html">Data Backup Recovery</a></li>
+              <li><a href="serverdesktopvirtualization.html">Server Desktop Virtualization</a></li>
+            </ul>
+          </li>
+
+
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Products.html#a2">Storage</a></li>
+              
+              <li><a href="Products.html#a1">Firewalls </a></li>
+              <li><a href="Products.html#a3">Networking Products</a></li>
+              <li><a href="Products.html#a4">Servers</a></li>
+               <li><a href="Products.html#a5">Vc/Ac</a></li>
+              
+              <li><a href="Products.html#a6">KVM & Console/Connectivity </a></li>
+              <li><a href="Products.html#a7">Product Licensing</a></li>
+              <li><a href="Products.html#a8">Mcafee/Symantac/QH</a></li>
+            </ul>
+          </li>
+
+
+          <li><a class="nav-link scrollto" href="index.html#came1">Contact</a></li>
+          <li><a class="nav-link scrollto" href="index.html#12345">Careers</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div id="1235" style="height: 40px;"></div>
+
+
+  <section id="about10" class="about">
+
+    <div class="container" data-aos="fade-up">
+      <div class="row gx-0">
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content">
+            <h2>
+                Product
+</h2>
+            <p>
+                Products of starkit are Firewall,Storage,Networking Product,Server,Video and Conference,Physical Di product,product licensing and Mcafee/Symantac/QH
+            </p>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets\img\product.jpg" class="img-fluid" style="height: 400px;" alt="">
+        </div>
+
+      </div>
+    </div>
+
+  </section><!-- End About Section -->
+
+
+<!-- <div class="images1234">
+<div class="box123">
+  <div class="box-img1">
+    <img src="assets\img\manageddata.jpg" alt="">
+    <div class="content12">
+      <h3>Black Panther</h3>
+      <p>Imdb 7/10</p>
+    </div>
+  </div>
+</div>
+</div> -->
+<!-- <div class="container">
+  <div id="cards">
+  <div id="card1">
+    <img src="assets\img\managed serivce.jpg" id="cardfront" height="400px" width="30%" alt="">
+    <img src="assets\img\managecasdas.jpg" alt="">
+  </div>
+  <div id="card2">Card 2</div>
+  </div>
+  </container> -->
+  <div class="contclass"> 
+  <div class="containerCard">
+    <div class="card12">
+      <div class="front1"></div>
+      <div class="back1">
+        <h3>Firewall</h3>
+       <p>Stark IT offers a complete range of firewalls from leading security vendors like Fortinet </p>
+        <br>
+        
+        <a href="#about1">View Details</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="containerCard">
+    <div class="card12" >
+      <div class="front2"></div>
+      <div class="back1">
+        <h3>Storage</h3>
+        <p>HaaS or Hardware as a Service allows organizations to access the latest hardware equipment without an extra capital expenditure. </p>
+        <br>
+        
+        <a href="#about2">View Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="containerCard">
+    <div class="card12" >
+      <div class="front3"></div>
+      <div class="back1">
+        <h3>Networking Product</h3>
+        <p>In a modern cut edge environment, no organization can work without a robust and reliable network. </p>
+        <br>
+        
+        <a href="#about3">View Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="containerCard">
+    <div class="card12" >
+      <div class="front4"></div>
+      <div class="back1">
+        <h3>Server</h3>
+       <p>Servers are the foundation of any IT infrastructure. This is the backbone of your entire network and operations.</p>
+        <br>
+       
+        <a href="#about4">View Details</a>
+      </div>
+    </div>
+  </div>
+  
+
+  
+</div>
+  <div id="sdifn" style="height: 50px;"></div>
+  
+<div class="contclass"> 
+  <div class="containerCard">
+    <div class="card12" >
+      <div class="front5"></div>
+      <div class="back1">
+        <h3>Video And Audio Conferences</h3>
+        <p>In this virtual environment, conducting business with global clientele requires your virtual presence</p>
+        <br>
+      
+        <a href="#about5">View Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="containerCard">
+    <div class="card12" >
+      <div class="front6"></div>
+      <div class="back1">
+        <h3>Physical Data Infrastructure Products
+        </h3>
+        <p>Connection to the number of servers across the board is a daunting task making it time consuming and redundant. </p>
+        <br>
+       
+        <a href="#about6">View Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="containerCard">
+    <div class="card12" >
+      <div class="front7"></div>
+      <div class="back1">
+        <h3>Product Licensing
+        </h3>
+       <p>Stark IT offers a wide range of market-leading software licenses.</p>
+        <br>
+       
+        <a href="#about7">View Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="containerCard">
+    <div class="card12" >
+      <div class="front8"></div>
+      <div class="back1">
+        <h3>Mcafee/Symantac/QH</h3>
+        <p>McAfee is a good antivirus and worth the investment. </p>
+        <br>
+       
+        <a href="#about8">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+  
+  
+
+
+<section id="about1" class="about"  >
+
+  <div class="container" data-aos="fade-up" id="a1">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content1" >
+          <h2>
+            Firewall</h2>
+          <p>
+            Stark IT offers a complete range of firewalls from leading security vendors like Fortinet, Palo Alto Networks and SonicWall and proxy servers for effective control and security from external threats. As a partner for all leading firewall providers, we can implement a customized firewall solution for complete security.
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(http://starkit.co.in/assets/images/firewall.jpg);height: 400px;margin-top: 300px;">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about2" class="about" >
+
+  <div class="container" data-aos="fade-up"id="a2">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content2" >
+          <h2>
+            Storage
+</h2>
+          <p>
+            HaaS or Hardware as a Service allows organizations to access the latest hardware equipment without an extra capital expenditure. We offer a variety of storage devices including SAN (Storage Area Network), NAS (Network Attached Storage), DAS (Direct Attached Storage) from leading brands like Dell, EMC, IBM, Netapp, Google Drive, Dropbox, One Drive. You can Choose storage depending on capacity, scalability, reliability, performance of your business reuirement
+            </p>
+            
+          
+        </div>
+      </div>
+
+    
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(https://c1.wallpaperflare.com/preview/724/645/91/timber-sheet-products-industry-wood.jpg);height: 400px;background-size: cover;margin-top: 240px;">
+      </div>
+
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about3" class="about"  >
+
+  <div class="container" data-aos="fade-up"id="a3">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content3">
+          <h2>
+            Networking Product
+
+</h2>
+          <p>
+            In a modern cut edge environment, no organization can work without a robust and reliable network. You cannot afford any interruptions or downtime affecting your business functions. Are you looking for a basic setup or want to set up Wi-Fi or worried about security? With our expert in network solution and implementation, you can expect the best possible solution for your bespoke requirements. Few of the networking products include Core Routing and Switching, Wireless, Application Delivery, Load Balancing, Network Failover and Resiliency, WAN Optimization, Network Security, Application Performance Management, etc.     </p>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmV0d29ya3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);height: 400px;background-size: cover;margin-top: 200px;">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about4" class="about" >
+
+  <div class="container" data-aos="fade-up"id="a4">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content4" >
+          <h2>
+            Server
+</h2>
+          <p>
+            Servers are the foundation of any IT infrastructure. This is the backbone of your entire network and operations. With our partnership and expertise, we can offer the entire spectrum of the server services like Rack servers, Tower servers, Composable systems, Hyperconverged systems, Bladed infrastructure, Density optimized servers, Server options, Mission-critical systems.
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(http://starkit.co.in/assets/images/server.jpg);height: 400px;background-size: cover;margin-top: 260px;">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about5" class="about">
+
+  <div class="container" data-aos="fade-up" id="a5">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content5" >
+          <h2>
+            Video And Audio Conferences
+
+</h2>
+          <p>
+            In this virtual environment, conducting business with global clientele requires your virtual presence and with VC capabilities you can connect remotely with just a few clicks. Whatever may be your requirement, Video conference, teleconference, web conference or hybrid we can provide the best suitable products like Large Format LCD Displays, LED Video Walls, Digital Signage, Projection Displays, and more that supports and also meets your requirement.
+            <br>✓ Cost-effective
+        <br>    ✓ Extended reach and flexibility
+       <br>     ✓ Increased engagement      </p>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(http://starkit.co.in/assets/images/vc2.jpg);height: 400px;background-size: cover;margin-top: 160px;">
+      </div>
+
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about6" class="about" >
+
+  <div class="container" data-aos="fade-up"id="a6">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content6" >
+          <h2>
+            Physical Data Infrastructure Products</h2>
+          <p>
+            Connection to the number of servers across the board is a daunting task making it time consuming and redundant. With Physical Data Infrastructure Products, you can avail effective rack-mounted control options for single or multiple servers. May it be digital or analog you can control them and save time, space and efforts. Normally the setup includes the LCD, keyboard, and trackpad in a compact way for effective connectivity with the support of Cabling Power Cords, Backup-Primary Power, KVM Switches & Console Servers/Data Centre Infrastructure Management, RACK, Cooling Systems and many more.
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(https://media.istockphoto.com/id/1314761274/photo/server-room-data-center-3d-rendering.jpg?s=612x612&w=0&k=20&c=E8BNNB3xhvCPE50NtBT8csOv2XDPWZkYUw8uLGbWWBc=);height: 400px;background-size: cover;margin-top: 200px;">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+
+
+<section id="about7" class="about" >
+
+    <div class="container" data-aos="fade-up"id="a7">
+      <div class="row gx-0">
+  
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content6" >
+            <h2>
+                Product Licensing  </h2>
+            <p>
+                Stark IT offers a wide range of market-leading software licenses. The range of licenses includes:
+               <br> 1)Microsoft Licensing
+               <br>  2)Adobe Licensing
+               <br>  3)Design Software
+               <br>   4)Microsoft Office Suites
+               <br>  5)Dropbox
+                <br>  6)DocuSign
+                <br>   7)LogmeIn
+                <br>  8)Central
+                <br>  9)Bit Titan
+                <br>   10) Macfee & Symantec Endpoint Protection Cloud
+                <br>  11)CISC
+                <br>  12)Autodesk
+                <br>  13)IBM Cloud
+                <br>   14)MS-Azure & O365
+                <br>  15)Netmagic
+                <br> 16)Server & Networking Software
+                <br>  17)Collaboration Software
+                <br> 18)Backup Software
+                <br>  19)Security Software
+                <br>  20)Accounting Software
+                <br>  21)Device Management Software
+                <br>   22)Communication Software</p>
+            
+          </div>
+        </div>
+  
+        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(http://starkit.co.in/assets/images/license.jpg);height: 400px;background-size: cover;margin-top: 40px;">
+        </div>
+  
+      </div>
+    </div>
+  
+  </section><!-- End About Section -->
+  
+
+  
+
+  
+<section id="about8" class="about">
+
+    <div class="container" data-aos="fade-up"  id="a8">
+      <div class="row gx-0">
+  
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content6" >
+            <h2>
+                Mcafee/Symantac/QH
+  </h2>
+            <p>
+                McAfee is a good antivirus and worth the investment. It offers an extensive security suite that will keep your computer safe from malware and other online threats. It works really well on Windows, Android, Mac and iOS and the McAfee LiveSafe plan works on an unlimited number of personal devices.
+            </p>
+            
+          </div>
+        </div>
+  
+        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(https://cdn.wallpapersafari.com/0/83/VrTv23.jpg);height: 400px;background-size: cover;margin-top: 300px;">
+        </div>
+  
+      </div>
+    </div>
+  
+  </section><!-- End About Section -->
+  
+
+  
+
+ 
+  
+
+
+
+  <!-- =====
+   ======= Footer ======= -->
+  <br>
+  <br>
+
+  <br>
+
+
+ 
+  <footer id="footer" class="footer" style="background-color: antiquewhite;">
+
+    
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>Stark-IT</span>
+            </a>
+            Stark IT Technologies Pvt Ltd that has completed more than 1 decades in existence spanning the entire era of computer generations.
+        
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Expertise</h4>
+            <ul>
+              <li><a href="cybersecurity.html" data-ps2id-api="true">Cyber Security</a></li>
+              <li><a href="itconsulting.html" data-ps2id-api="true">IT Consulting</a></li>
+              <li><a href="cloudintegration.html" data-ps2id-api="true">Cloud Integration</a></li>   
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="Managed it services.html" data-ps2id-api="true">Managed IT Services</a></li>
+              <li><a href="Network security.html" data-ps2id-api="true">Network Security</a></li>
+              <li><a href="Data backup recovery.html" data-ps2id-api="true">Data Backup Recovery</a></li>
+              <li><a href="serverdesktopvirtualization.html" data-ps2id-api="true">Server Desktop Virtualization</a></li>
+              <li><a href="Products.html" data-ps2id-api="true">Products</a></li>        
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>Office No. 6, 3rd Floor, Sumitra, Near Nal-Stop, Erandwane, Pune, Maharashtra 411004 <br><br>
+              <strong>Phone:</strong> +91 9766475582<br>
+              <strong>Email:</strong> info@starkit.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   
+  </footer><!-- End Footer -->    
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

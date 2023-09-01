@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FlexStart Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Jun 19 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    .contclass{width: 100%;display: flex;padding-left: 10px;justify-content: space-evenly;}
+    .containerCard{width: 400px;height: 280px;padding-left: 40px;}
+    .containerCard:hover>.card12{cursor: pointer;;transform: rotateY(180deg);}
+    .card12{width: 100%;height:100%;position: relative;transition: transform 1500ms;transform-style: preserve-3d;}
+    .front1,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front1{background-image: url(http://starkit.co.in/assets/images/expertise/img9.jpg );background-size:cover;}
+    .back1{background-color: black;transform: rotateY(180deg);display: flex;flex-direction: column;justify-content: center;align-items: center;color: white;}
+    .front2{background-image: url(http://starkit.co.in/assets/images/expertise/img10.jpg);background-size:cover;}
+    .front3{background-image: url(http://starkit.co.in/assets/images/expertise/img11.png);background-size:cover;}
+    .front4{background-image: url(http://starkit.co.in/assets/images/expertise/img12.png);background-size:cover;}
+    .front5{background-image: url(data:image/jpeg;base64,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 );background-size:400px 500px;}
+    .front6{background-image: url(http://starkit.co.in/assets/images/AMC.jpg );background-size:cover;}
+    .front2,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front3,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front4,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front5,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front6,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+
+
+  </style>
+</head>
+
+<body>
+
+   <!-- ======= Header ======= -->
+   <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/starkitremovebg.png" alt="" height="">
+        <!-- <span>FlexStart</span> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          
+          <li><a class="nav-link scrollto" href="index.html#about">About us</a></li>
+         
+          <li class="dropdown"><a href="#"><span>Expertise</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="cybersecurity.html">Cyber Security</a></li>
+             
+              <li><a href="itconsulting.html">IT Consulting </a></li>
+              <li><a href="cloudintegration.html">Cloud Integration</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Managed Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Managed it services.html">Managed IT Services</a></li>
+              
+              <li><a href="Network security.html">Network Security </a></li>
+              <li><a href="Data backup recovery.html">Data Backup Recovery</a></li>
+              <li><a href="serverdesktopvirtualization.html">Server Desktop Virtualization</a></li>
+            </ul>
+          </li>
+
+
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Products.html#a2">Storage</a></li>
+              
+              <li><a href="Products.html#a1">Firewalls </a></li>
+              <li><a href="Products.html#a3">Networking Products</a></li>
+              <li><a href="Products.html#a4">Servers</a></li>
+               <li><a href="Products.html#a5">Vc/Ac</a></li>
+              
+              <li><a href="Products.html#a6">KVM & Console/Connectivity </a></li>
+              <li><a href="Products.html#a7">Product Licensing</a></li>
+              <li><a href="Products.html#a8">Mcafee/Symantac/QH</a></li>
+            </ul>
+          </li>
+
+
+  <li><a class="nav-link scrollto" href="index.html#contact1">Contact</a></li>      
+      <li><a class="nav-link scrollto" href="index.html#12345">Careers</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div id="1235" style="height: 40px;"></div>
+
+
+  <section id="about10" class="about">
+
+    <div class="container" data-aos="fade-up">
+      <div class="row gx-0">
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content">
+            <h2>
+                IT Consulting
+</h2>
+            <p>
+                IT consulting services are advisory services that help clients assess different technology strategies and, in doing so, align their technology strategies with their business or process strategies.         </p>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(https://www.1stcomputerservices.com/wp-content/uploads/2022/04/image-1600x900.png);background-size: cover;">
+         
+        </div>
+
+      </div>
+    </div>
+
+  </section><!-- End About Section -->
+
+
+<!-- <div class="images1234">
+<div class="box123">
+  <div class="box-img1">
+    <img src="assets\img\manageddata.jpg" alt="">
+    <div class="content12">
+      <h3>Black Panther</h3>
+      <p>Imdb 7/10</p>
+    </div>
+  </div>
+</div>
+</div> -->
+<!-- <div class="container">
+  <div id="cards">
+  <div id="card1">
+    <img src="assets\img\managed serivce.jpg" id="cardfront" height="400px" width="30%" alt="">
+    <img src="assets\img\managecasdas.jpg" alt="">
+  </div>
+  <div id="card2">Card 2</div>
+  </div>
+  </container> -->
+  <div class="contclass"> 
+  <div class="containerCard">
+    <div class="card12">
+      <div class="front1"></div>
+      <div class="back1">
+        <h3>Business Strategy & Transformation</h3>
+        <p>Over time we have developed the IT Consulting expertise to design opportunities for digital and organizational transformation </p>
+        <br>
+       
+        <a href="#about1">View Details</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="containerCard">
+    <div class="card12">
+      <div class="front2"></div>
+      <div class="back1">
+        <h3>Data & Analytics</h3>
+        <p>We help you to expedite your business transition by analyzing your data to realize strategic and actionable insights.</p>
+        <br>
+        
+        <a href="#about2">View Details</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="containerCard">
+    <div class="card12">
+      <div class="front3"></div>
+      <div class="back1">
+        <h3>Enterprise Business Applications</h3>
+       <p>To help our clients make better use of and optimize their business capabilities</p>
+        <br>
+        
+        <a href="#about3">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="containerCard">
+    <div class="card12">
+      <div class="front4"></div>
+      <div class="back1">
+        <h3>Software Asset Management</h3>
+        <p>Are you looking for safe, efficient and scalable application integration for hybrid IT environments?</p>
+        <br>
+      
+        <a href="#about4">View Details</a>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+  <div id="sdifn" style="height: 50px;"></div>
+
+  
+
+
+<section id="about1" class="about">
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content1">
+          <h2>
+            Business Strategy & Transformation
+</h2>
+          <p>
+            Over time we have developed the IT Consulting expertise to design opportunities for digital and 
+            organizational transformation to thrive in the digital age. Keeping this in mind, we use the best technology to make 
+            truly meaningful progress feasible. Our IT Consulting experts will architect a smart BCP – Business Continuity Plan with a focus 
+            on disaster recovery to tackle the possible outages. We assist in building a bespoke IT strategy enabling a customer-centric business 
+            transformation inline with your IT infrastructure. Our IT Consulting services will help your business leverage emerging technologies 
+            to design agile methodology and adopt strategic business technology strategies and  solutions.
+          
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(http://starkit.co.in/assets/images/expertise/img9.jpg);height: 400px;margin-top: 180px;">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about2" class="about">
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content2">
+          <h2>
+            Data & Analytics
+</h2>
+          <p>
+            We help you to expedite your business transition by analyzing your data to 
+            realize strategic and actionable insights. With our expertise and unique matrix, transform your structured, unstructured and 
+            external data into tactical and actionable insights.
+         
+          <ul>
+              <li>Robust and reliable solutions for data handling</li>                            
+              <li>Simple, efficient, and scalable data management solution</li>
+              <li>Industry leading technologies expertise</li>
+          </ul>                
+          </p>
+          
+        </div>
+      </div>
+
+    
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(https://www.cio.com/wp-content/uploads/2023/05/data_analytics_risk_assessment_tracking_trends_graphs_by_ipopba_gettyimages-1150397416_2400x1600-100828857-orig-7.jpg?quality=50&strip=all);height: 400px;background-size: cover;margin-top: 220px;">
+      </div>
+
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about3" class="about">
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content3">
+          <h2>
+            Enterprise Business Applications
+</h2>
+          <p>
+            To help our clients make better use of and optimize their business capabilities, we 
+            offer consulting for enterprise business applications. We will consolidate data from all access points to help you achieve more 
+            accessibility and insight into your business processes. Be it implementing, integrating, expanding or just managing we can help 
+            your enterprise business applications.      </p>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(https://www.shutterstock.com/image-photo/business-technology-internet-network-concept-260nw-2230089669.jpg);height: 400px;background-size: cover;margin-top: 260px;background-size: cover;">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+<section id="about4" class="about">
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content4">
+          <h2>
+            Software Asset Management
+</h2>
+          <p>
+            Are you looking for safe, efficient and scalable application integration 
+            for hybrid IT environments?  Software Asset Management (SAM) solutions offer the proven processes and software you need 
+            to help your customers manage, protect, and optimize IT assets – and drive their businesses forward. With our Software 
+            Asset Management Consulting expertise, we help you integrate your existing components and off-the-shelf applications in an 
+            efficient and unified entity.
+            <ul>
+                <li>Customized view of business data</li>                            
+                <li>Comprehensive system integration solutions</li>
+                <li>Reliable data transfers</li>
+                <li>Customized solutions for SAP, Microsoft, and Oracle</li>
+            </ul>         
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200" style="background-image: url(http://starkit.co.in/assets/images/expertise/img12.png);height: 400px;background-size: cover;margin-top: 130px;">
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- End About Section -->
+
+
+
+
+
+
+  <
+  <footer id="footer" class="footer" style="background-color: antiquewhite;">
+
+    
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>Stark-IT</span>
+            </a>
+            Stark IT Technologies Pvt Ltd that has completed more than 1 decades in existence spanning the entire era of computer generations.
+        
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Expertise</h4>
+            <ul>
+              <li><a href="cybersecurity.html" data-ps2id-api="true">Cyber Security</a></li>
+              <li><a href="itconsulting.html" data-ps2id-api="true">IT Consulting</a></li>
+              <li><a href="cloudintegration.html" data-ps2id-api="true">Cloud Integration</a></li>   
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="Managed it services.html" data-ps2id-api="true">Managed IT Services</a></li>
+              <li><a href="Network security.html" data-ps2id-api="true">Network Security</a></li>
+              <li><a href="Data backup recovery.html" data-ps2id-api="true">Data Backup Recovery</a></li>
+              <li><a href="serverdesktopvirtualization.html" data-ps2id-api="true">Server Desktop Virtualization</a></li>
+              <li><a href="Products.html" data-ps2id-api="true">Products</a></li>        
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>Office No. 6, 3rd Floor, Sumitra, Near Nal-Stop, Erandwane, Pune, Maharashtra 411004 <br><br>
+              <strong>Phone:</strong> +91 9766475582<br>
+              <strong>Email:</strong> info@starkit.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

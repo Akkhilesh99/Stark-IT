@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FlexStart Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Jun 19 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    .contclass{width: 100%;display: flex;padding-left: 10px;justify-content: space-evenly;}
+    .containerCard{width: 400px;height: 280px;padding-left: 40px;}
+    .containerCard:hover>.card12{cursor: pointer;;transform: rotateY(180deg);}
+    .card12{width: 100%;height:100%;position: relative;transition: transform 1500ms;transform-style: preserve-3d;}
+    .front1,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front1{background-image: url(http://starkit.co.in/assets/images/firewall.jpg );background-size:400px 500px;}
+    .back1{background-color: black;transform: rotateY(180deg);display: flex;flex-direction: column;justify-content: center;align-items: center;color: white;}
+    .front2{background-image: url(http://starkit.co.in/assets/images/storage.jpg);background-size:400px 500px;}
+    .front3{background-image: url(http://starkit.co.in/assets/images/networking%20products.jpg);background-size:400px 500px;}
+    .front4{background-image: url(http://starkit.co.in/assets/images/server.jpg);background-size:400px 500px;}
+    .front5{background-image: url(http://starkit.co.in/assets/images/vc2.jpg );background-size:400px 500px;}
+    .front6{background-image: url(http://starkit.co.in/assets/images/infra.jpg );background-size:400px 500px;}
+    .front7{background-image: url(http://starkit.co.in/assets/images/license.jpg );background-size:400px 500px;}
+    .front8{background-image: url(https://www.mcafee.com/content/dam/consumer/en/company-logo/McAFEE_TAG_H_RGB.png );background-size:400px 500px;}
+    .front2,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front3,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front4,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front5,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front6,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front7,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+    .front8,.back1{width: 100%;height:100%;border-radius: 2rem;box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);position: absolute;backface-visibility: hidden;}
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/starkitremovebg.png" alt="" height="">
+        <!-- <span>FlexStart</span> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+          <li><a class="nav-link scrollto" href="#about">About us</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li> -->
+          <li class="dropdown"><a href="#"><span>Expertise</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Cyber Security</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">IT Consulting </a></li>
+              <li><a href="#">Cloud Integration</a></li>
+              <!-- <li><a href="#">Drop Down 4</a></li> -->
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Managed Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Managed IT Services</a></li>
+              
+              <li><a href="#">Network Security </a></li>
+              <li><a href="#">Data Backup Recovery</a></li>
+              <li><a href="#">Server Desktop Virtualization</a></li>
+            </ul>
+          </li>
+
+
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Storage</a></li>
+              
+              <li><a href="#">Firewalls </a></li>
+              <li><a href="#">Networking Products</a></li>
+              <li><a href="#">Servers</a></li>
+               <li><a href="#">Vc/Ac</a></li>
+              
+              <li><a href="#">KVM & Console/Connectivity </a></li>
+              <li><a href="#">Product Licensing</a></li>
+              <li><a href="#">Mcafee/Symantac/QH</a></li>
+            </ul>
+          </li>
+
+          <!-- <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li>
+                <a href="#">Column 1 link 1</a>
+                <a href="#">Column 1 link 2</a>
+                <a href="#">Column 1 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 2 link 1</a>
+                <a href="#">Column 2 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 3 link 1</a>
+                <a href="#">Column 3 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 4 link 1</a>
+                <a href="#">Column 4 link 2</a>
+                <a href="#">Column 4 link 3</a>
+              </li>
+            </ul>
+          </li> -->
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Careers</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <div id="1235" style="height: 100px;"></div>
+
+
+<div class="carrier-cr">
+	<div class="container">
+		<div class="info">
+        	<b>ASP.NET MVC Application Designer</b>
+        </div>
+        <hr>
+        <div class="row">
+        	
+        	<div class="col-lg-6">
+            <div class="descript">
+              <ul type="dot">
+                <li>
+                  <strong>Project Role :</strong> Application Designer
+                </li>
+                <li>
+                  <strong>Project Role Description :</strong> Assist in defining requirements and designing applications to meet business process and application requirements.
+
+                </li>
+                <li>
+                  <strong>No. of Opening :</strong> 10
+                </li>
+                <li>
+                  <strong>Work Experience :</strong> 4-6 years
+                </li>
+                <li>
+                  <strong>Work location :</strong> Bengaluru
+                </li>
+                <li>
+                  <strong>Must Have Skills :</strong> ASP.NET MVC
+                </li>
+                <li>
+                  <strong>Good To Have Skills :</strong>No Technology Specialization
+                </li>
+                <li>
+                  <strong>Job Requirements :</strong>
+                </li>
+                <ul type="circle">
+                  <li>
+                    <strong>Key Responsibilities :</strong>
+                  </li>
+                  <ol type="1">
+                    <li>Design, Build and test business applications on ASP NET MVC</li>
+                    <li>Exposure to Agile delivery methodology</li>
+                    <li>Mentor the team across Technical/Functional areas</li>
+                    <li>Provide daily status update on the Development activities</li>
+                    <li>Strong analytical skills with excellent problem-solving abilities to Identify bottlenecks and bugs, and provide the appropriate solutions</li>
+                  </ol>
+                  <li>
+                    <strong>Technical Experience :</strong>
+                  </li>
+                  <ol type="1">
+                    <li>Experience in ASP NET MVC Web API Development using C</li>
+                    <li>Extensive knowledge in HTML, Java Script CSS</li>
+                    <li>Strong DB concepts in SQL Server/Postgres SQL</li>
+                    <li>Exposure to Angular skillset is an advantage</li>
+                    <li>Debug any performance issues in applications</li>
+                  </ol>
+                  <li >
+                    <strong>Professional Attributes :</strong>
+                    <ol type="1">
+                      <li>Good communication skill</li>
+                    </ol>
+                  </li>
+                </ul>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+	</div>
+</div>
+<br><br><br>
+<!--Footer Div -->
+         <footer class="myFooter">          
+                      <div class="row">
+                          <div id="footerMenu" class="col-md-3 col-sm-4 col-xs-12">
+                            <h5>Contacts</h5>
+                            <hr/>
+                                <ul>
+                                  <li><span class="fa fa-phone"></span><strong>Phone: </strong></li>
+                                  <li><span class="fa fa-envelope"></span> <strong>Email:</strong><a href="mailto:info@starkit.co.in">info@starkit.co.in</a></li>
+                                  <li><span class="fa fa-map-marker"></span><span></span><strong>Adress:</strong>Office No. 6, 3rd Floor, Sumitra, Near Nal-Stop, Erandwane, Pune, Maharashtra 411004</span>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div id="footerMenu" class="col-md-3 col-sm-4 col-xs-12" >
+                            <h5>Expertise</h5>
+                            <hr/>
+                            <ul><li><a href="cyber_security.html" data-ps2id-api="true">Cyber Security</a></li>
+                                <li><a href="IT_consulting.html" data-ps2id-api="true">IT Consulting</a></li>
+                                <li><a href="cloud_integration.html" data-ps2id-api="true">Cloud Integration</a></li>      
+                            </ul>
+                          </div>
+                          <div id="footerMenu" class="col-md-3 col-sm-4 col-xs-12" >
+                              <h5>Managed Services</h5>
+                              <hr/>
+                              <ul>
+                                  <li><a href="Managed Services.html" data-ps2id-api="true">Managed IT Services</a></li>
+                                  <li><a href="Network Security.html" data-ps2id-api="true">Network Security</a></li>
+                                  <li><a href="Data Backup Recovery.html" data-ps2id-api="true">Data Backup Recovery</a></li>
+                                  <li><a href="server.html" data-ps2id-api="true">Server Desktop Virtualization</a></li>
+                                  <li><a href="Product.html" data-ps2id-api="true">Products</a></li>        
+                              </ul>
+                          </div>
+                            <div id="footerMenu" class="col-md-3 col-sm-4 col-xs-12">
+                              <h5>Help</h5>
+                              <hr/>
+                              <ul>
+                                <li><a href="Index.html#my-about" data-ps2id-api="true">About</a></li>
+                                <li><a href="Index.html#my-contact" data-ps2id-api="true">Contact Us</a></li>
+                                <li><a href="carrier.html" data-ps2id-api="true">Careers</a></li>      
+                              </ul>
+                            </div>
+                        </div> 
+                        <!--Footer Bottom-->  
+                        <div class="MyFooterBottom">         
+                          <p>2021&nbsp;<a href="#">StarkIT Solutions</a>&nbsp; All Rights Reserved</p> 
+                        </div> 
+        </footer>        
+</body>
+</html>
